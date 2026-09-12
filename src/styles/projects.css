@@ -1,0 +1,32 @@
+
+#projects_header{
+  display: block;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+#projects_header h4{
+  font-size: 50px;
+}
+
+#container_projects{
+  margin-bottom: 20px;
+}
+
+/*BREAKPOINTS*/
+  
+/* For large devices */
+@media screen and (min-width: 1023px) {
+    
+    #projects{
+      grid-template-columns: 50% 50%;
+    }
+    
+      }
+
+/*mobile devices */
+@media screen and (max-width: 1023px) {
+  #projects_header{
+      margin-top: 90px;
+  }
+}

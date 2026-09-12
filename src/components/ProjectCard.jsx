@@ -1,0 +1,64 @@
+import { Link } from "react-router-dom";
+import { useSite } from "../context/SiteContext";
+import ModeImage from "./ModeImage";
+
+export default function ProjectCard({ project, titleLinksToArticle = false }) {
+  const { t } = useSite();
+  const title = <div id="project_title">{project.title}</div>;
+
+  return (
+    <div className="project">
+      {project.ownProject ? (
+        <div id="project_company">{t("Own project")}</div>
+      ) : (
+        project.company && (
+          <div id="project_company">
+            {t("Working for")}: {project.company}
+          </div>
+        )
+      )}
+      {titleLinksToArticle ? (
+        <Link to={`/projects/${project.slug}`}>{title}</Link>
+      ) : (
+        title
+      )}
+      <div id="project_image">
+        <ModeImage
+          light={project.imageLight}
+          dark={project.imageDark}
+          alt="Project preview in light and dark mode"
+          className="project_image_change"
+        />
+      </div>
+      <div id="project_description">{t(project.descriptionKey)}</div>
+      <div id="project_links">
+        <ul id="project_links_list">
+          <li>
+            <Link to={`/projects/${project.slug}`} className="project_link">
+              {t("Article")}
+            </Link>
+          </li>
+          {project.sourceUrl && (
+            <li>
+              <a
+                href={project.sourceUrl}
+                className="project_link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {t("Source")} <i className="ri-external-link-line"></i>
+              </a>
+            </li>
+          )}
+          {project.demoUrl && (
+            <li>
+              <Link to={project.demoUrl} className="project_link">
+                {t("Demo")} <i className="ri-external-link-line"></i>
+              </Link>
+            </li>
+          )}
+        </ul>
+      </div>
+    </div>
+  );
+}

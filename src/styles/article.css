@@ -1,0 +1,162 @@
+#container_article{
+    margin-top: 120px;
+}
+
+#article_header h1{
+    font-size: 35px;
+}
+
+#article_header .company{
+    color: var(--first-color);
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#article_body{
+    margin-top: 30px;
+}
+
+#article_body p{
+    text-indent: 20px;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+#article_body h2{
+    margin-top: 20px;
+}
+
+/*Code Box*/
+
+pre{
+    background-color: var(--header-color);
+    border: 3px solid var(--text-color);
+    border-radius: 12px;
+    padding: 25px 35px;
+    margin: 25px auto;
+    font-weight: 600;
+    overflow-x: auto;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  }
+
+/*Color Code Classes*/
+
+.red_code{
+    color: #dd171a;
+    font-weight: bold;
+}
+
+.green_code{
+    color: #639900;
+    font-weight: bold;
+}
+
+.orange_code{
+    color: #CB4B16;
+    font-weight: bold;
+}
+
+.blue_code{
+    color: var(--bluecode-color);
+    font-weight: bold;
+}
+
+.yellow_code{
+    color: #B58915;
+    font-weight: bold;
+}
+
+.pink_code{
+    color: #D33682;
+    font-weight: bold;
+}
+
+/*Different Codes*/
+
+#code_model{
+    width: 560px;
+}
+
+#code_inheritance{
+    width: 400px;
+}
+
+#code_auth{
+    width: 670px;
+}
+
+#code_request{
+    width: 530px;
+}
+
+#code_crud_model{
+    width: 525px;
+}
+
+#code_crud_serializer{
+    width: 550px;
+}
+
+#code_crud_viewset{
+    width: 470px;
+}
+
+#code_swagger{
+    width: 650px;
+}
+
+#code_json{
+    width: 600px;
+}
+
+#code_main{
+    width: 340px;
+}
+
+#code_tkinter{
+    width: 430px;
+}
+
+#code_save_to_csv{
+    width: 810px;
+}
+
+#code_send_email{
+    width: 910px;
+}
+
+#code_calendar{
+    width: 650px;
+}
+
+#code_logic1{
+    width: 630px;
+}
+
+#code_logic2{
+    width: 930px;
+}
+
+#code_logic3{
+    width: 610px;
+}
+
+#code_auth1{
+    width: 790px;
+}
+
+#code_auth2{
+    width: 980px;
+}
+
+@media screen and (max-width: 1023px) {
+    pre{
+        width: 100% !important;
+    }
+
+    #container_article{
+        margin-top: 90px;
+    }
+  
+  }
