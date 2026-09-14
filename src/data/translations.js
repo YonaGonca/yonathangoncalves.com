@@ -36,8 +36,8 @@ export const TRANSLATIONS = {
     "Send": "Enviar",
     "Home": "Inicio",
     "Hey, I'm Yonathan.": "Hola, soy Yonathan.",
-    "I'm a backend developer with a deep passion for problem-solving and who finds joy in learning.":
-      "Soy un desarrollador backend con una profunda pasión por resolver problemas y que disfruta del aprendizaje.",
+    "I'm a developer with a deep passion for problem-solving and who finds joy in learning. I have experience in both mobile and web software development, and I'm currently working at Infra Support AG as a Software Engineer.":
+      "Soy desarrollador con una profunda pasión por resolver problemas y que disfruta del aprendizaje. Tengo experiencia en desarrollo de software tanto móvil como web. Actualmente trabajo en Infra Support AG como Software Engineer.",
     "On this site you can check out all the ": "En este sitio puedes ver todos los ",
     "I've worked on, or learn more": "en los que he trabajado, o puedes saber más",
     "about me": "sobre mí",
@@ -87,8 +87,8 @@ export const TRANSLATIONS = {
     "Send": "Enviar",
     "Home": "Início",
     "Hey, I'm Yonathan.": "Olá, sou Yonathan",
-    "I'm a backend developer with a deep passion for problem-solving and who finds joy in learning.":
-      "Sou um desenvolvedor backend com uma grande paixão por resolver problemas e que encontra alegria em aprender.",
+    "I'm a developer with a deep passion for problem-solving and who finds joy in learning. I have experience in both mobile and web software development, and I'm currently working at Infra Support AG as a Software Engineer.":
+      "Sou desenvolvedor com uma grande paixão por resolver problemas e que encontra alegria em aprender. Tenho experiência em desenvolvimento de software tanto móvel quanto web. Atualmente trabalho na Infra Support AG como Software Engineer.",
     "On this site you can check out all the ": "Neste site, você pode conferir todos os ",
     "I've worked on, or learn more": "em que trabalhei, ou saber mais",
     "about me": "sobre mim",
@@ -138,8 +138,8 @@ export const TRANSLATIONS = {
     "Send": "Envoyer",
     "Home": "Accueil",
     "Hey, I'm Yonathan.": "Salut, je suis Yonathan.",
-    "I'm a backend developer with a deep passion for problem-solving and who finds joy in learning.":
-      "Je suis un développeur backend avec une profonde passion pour la résolution de problèmes et qui trouve de la joie dans l'apprentissage.",
+    "I'm a developer with a deep passion for problem-solving and who finds joy in learning. I have experience in both mobile and web software development, and I'm currently working at Infra Support AG as a Software Engineer.":
+      "Je suis développeur avec une profonde passion pour la résolution de problèmes et qui trouve de la joie dans l'apprentissage. J'ai de l'expérience dans le développement de logiciels mobiles et web. Je travaille actuellement chez Infra Support AG en tant que Software Engineer.",
     "On this site you can check out all the ": "Sur ce site, vous pouvez consulter tout le ",
     "I've worked on, or learn more": "sur lequel j'ai travaillé, ou en savoir plus",
     "about me": "à propos de moi",

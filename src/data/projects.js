@@ -7,6 +7,18 @@ export const PROJECTS = [
     descriptionKey: "Flutter web admin panel to manage properties, laundry reservations, and residents.",
     imageLight: "/assets/images/lavaresi_admin_panel.png",
     imageDark: "/assets/images/lavaresi_admin_panel.png",
+    technologies: [
+      { icon: "/assets/icons/dart.svg", label: "Dart" },
+      { icon: "/assets/icons/flutter.svg", label: "Flutter" },
+      { icon: "/assets/icons/python.svg", label: "Python" },
+      {
+        iconLight: "/assets/icons/flask.svg",
+        iconDark: "/assets/icons/flask-darkmode.svg",
+        label: "Flask",
+      },
+      { icon: "/assets/icons/postgresql.png", label: "PostgreSQL" },
+      { icon: "/assets/icons/pytest.png", label: "pytest" },
+    ],
   },
   {
     slug: "viatel-automation-tool",
@@ -17,6 +29,9 @@ export const PROJECTS = [
     imageLight: "/assets/images/viatel.webp",
     imageDark: "/assets/images/viatel_dark.webp",
     sourceUrl: "https://github.com/YonaGonca/Policiamentos-Viatel-Automation-Tool",
+    technologies: [
+      { icon: "/assets/icons/python.svg", label: "Python" },
+    ],
   },
   {
     slug: "my-portfolio",
@@ -26,39 +41,35 @@ export const PROJECTS = [
     descriptionKey: "The source of this website.",
     imageLight: "/assets/images/portfolio.webp",
     imageDark: "/assets/images/portfolio_dark.webp",
-    sourceUrl: "https://github.com/YonaGonca/myportfolio",
-    demoUrl: "/",
+    sourceUrl: "https://github.com/YonaGonca/yonathangoncalves.com",
+    technologies: [
+      { icon: "/assets/icons/html.svg", label: "HTML5" },
+      { icon: "/assets/icons/css3.svg", label: "CSS3" },
+      { icon: "/assets/icons/javascript.svg", label: "JavaScript" },
+      { icon: "/assets/icons/react.svg", label: "React" },
+    ],
   },
 ];
 
 export const SKILLS = {
   proficient: [
     { icon: "/assets/icons/python.svg", label: "Python" },
+    {
+      iconLight: "/assets/icons/flask.svg",
+      iconDark: "/assets/icons/flask-darkmode.svg",
+      label: "Flask",
+    },
+    { icon: "/assets/icons/pytest.png", label: "pytest" },
     { icon: "/assets/icons/postgresql.png", label: "PostgreSQL" },
     { icon: "/assets/icons/html.svg", label: "HTML5" },
     { icon: "/assets/icons/css3.svg", label: "CSS3" },
     { icon: "/assets/icons/javascript.svg", label: "JavaScript" },
-    {
-      iconLight: "/assets/icons/django.png",
-      iconDark: "/assets/icons/django-darkmode.png",
-      label: "django",
-    },
+    { icon: "/assets/icons/react.svg", label: "React" },
+    { icon: "/assets/icons/dart.svg", label: "Dart" },
+    { icon: "/assets/icons/flutter.svg", label: "Flutter" },
   ],
-  learning: [
-    {
-      iconLight: "/assets/icons/drf.png",
-      iconDark: "/assets/icons/drf-darkmode.png",
-      label: "DRF",
-    },
-  ],
-  interested: [
-    { icon: "/assets/icons/postman.svg", label: "Postman" },
-    { icon: "/assets/icons/redis.png", label: "Redis" },
-    { icon: "/assets/icons/linux.png", label: "Linux" },
-    { icon: "/assets/icons/docker.png", label: "Docker" },
-    { icon: "/assets/icons/kubernetes.png", label: "Kubernetes" },
-    { icon: "/assets/icons/pytest.png", label: "pytest" },
-  ],
+  learning: [],
+  interested: [],
   tools: [
     { icon: "/assets/icons/vsc.png", label: "VSCode" },
     { icon: "/assets/icons/dbeaver.png", label: "DBeaver" },
@@ -68,17 +79,23 @@ export const SKILLS = {
       iconDark: "/assets/icons/github-darkmode.png",
       label: "GitHub",
     },
-    {
-      iconLight: "/assets/icons/latex.png",
-      iconDark: "/assets/icons/latex-darkmode.png",
-      label: "LATEX",
-    },
     { icon: "/assets/icons/thunder.png", label: "Thunder" },
     {
       iconLight: "/assets/icons/swagger.png",
       iconDark: "/assets/icons/swagger-dark.png",
       label: "Swagger",
     },
+    {
+      iconLight: "/assets/icons/penpot.svg",
+      iconDark: "/assets/icons/penpot-darkmode.svg",
+      label: "Penpot",
+    },
+    {
+      iconLight: "/assets/icons/latex.png",
+      iconDark: "/assets/icons/latex-darkmode.png",
+      label: "LATEX",
+    },
+    { icon: "/assets/icons/claude-ai.svg", label: "Claude" },
   ],
 };
 

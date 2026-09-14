@@ -30,6 +30,20 @@ export default function ProjectCard({ project, titleLinksToArticle = false }) {
           className="project_image_change"
         />
       </div>
+      {project.technologies && project.technologies.length > 0 && (
+        <div id="project_technologies">
+          {project.technologies.map((tech) => (
+            <div className="tech_icon" key={tech.label}>
+              {tech.iconLight ? (
+                <ModeImage light={tech.iconLight} dark={tech.iconDark} alt={`${tech.label} logo`} />
+              ) : (
+                <img src={tech.icon} alt={`${tech.label} logo`} />
+              )}
+              <span className="tech_tooltip">{tech.label}</span>
+            </div>
+          ))}
+        </div>
+      )}
       <div id="project_description">{t(project.descriptionKey)}</div>
       <div id="project_links">
         <ul id="project_links_list">

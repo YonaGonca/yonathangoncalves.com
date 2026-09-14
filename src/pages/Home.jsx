@@ -21,7 +21,7 @@ export default function Home() {
           <h3>{t("Hey, I'm Yonathan.")}</h3>
           <p>
             {t(
-              "I'm a backend developer with a deep passion for problem-solving and who finds joy in learning."
+              "I'm a developer with a deep passion for problem-solving and who finds joy in learning. I have experience in both mobile and web software development, and I'm currently working at Infra Support AG as a Software Engineer."
             )}
           </p>
           <p>
