@@ -12,13 +12,13 @@ export default function Projects() {
   }, [t]);
 
   return (
-    <div className="container" id="container_projects">
-      <div id="projects_header">
+    <div className="container" id="projects_page_container">
+      <div id="projects_page_header">
         <h4 className="projects_title">{t("Projects")}</h4>
       </div>
-      <div id="projects">
+      <div id="projects_page_grid">
         {PROJECTS.map((project) => (
-          <ProjectCard key={project.slug} project={project} titleLinksToArticle />
+          <ProjectCard key={project.slug} project={project} />
         ))}
       </div>
     </div>

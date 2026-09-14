@@ -1,5 +1,5 @@
 #container_article{
-    margin-top: 120px;
+    margin-top: 135px;
 }
 
 #article_header h1{
@@ -24,6 +24,22 @@
 
 #article_body h2{
     margin-top: 20px;
+}
+
+#article_source_link{
+    display: block;
+    width: 90px;
+    text-align: center;
+    padding: .3rem .2rem;
+    margin: 40px auto 40px auto;
+    border: 2px solid var(--text-color);
+    border-radius: 12px;
+    font-size: .85rem;
+}
+
+#article_source_link:hover{
+    border: 2px solid var(--first-color);
+    transition: 0.2s;
 }
 
 /*Code Box*/

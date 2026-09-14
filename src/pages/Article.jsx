@@ -7,7 +7,7 @@ import "../styles/article.css";
 
 export default function Article() {
   const { slug } = useParams();
-  const { t } = useSite();
+  const { t, language } = useSite();
   const project = PROJECTS.find((p) => p.slug === slug);
 
   useEffect(() => {
@@ -17,6 +17,10 @@ export default function Article() {
   if (!project) {
     return <Navigate to="/projects" replace />;
   }
+
+  const rawContent = ARTICLE_CONTENT[slug];
+  const articleHtml =
+    (typeof rawContent === "string" ? rawContent : rawContent?.[language] || rawContent?.en) || "";
 
   return (
     <div className="container" id="container_article">
@@ -33,10 +37,17 @@ export default function Article() {
         <h1>{project.title}</h1>
         <p className="date">{project.date}</p>
       </div>
-      <div
-        id="article_body"
-        dangerouslySetInnerHTML={{ __html: ARTICLE_CONTENT[slug] || "" }}
-      />
+      <div id="article_body" dangerouslySetInnerHTML={{ __html: articleHtml }} />
+      {project.sourceUrl && (
+        <a
+          href={project.sourceUrl}
+          id="article_source_link"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {t("Source")} <i className="ri-external-link-line"></i>
+        </a>
+      )}
     </div>
   );
 }

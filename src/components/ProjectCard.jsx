@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import { useSite } from "../context/SiteContext";
 import ModeImage from "./ModeImage";
 
-export default function ProjectCard({ project, titleLinksToArticle = false }) {
+export default function ProjectCard({ project }) {
   const { t } = useSite();
-  const title = <div id="project_title">{project.title}</div>;
 
   return (
     <div className="project">
@@ -17,11 +16,9 @@ export default function ProjectCard({ project, titleLinksToArticle = false }) {
           </div>
         )
       )}
-      {titleLinksToArticle ? (
-        <Link to={`/projects/${project.slug}`}>{title}</Link>
-      ) : (
-        title
-      )}
+      <Link to={`/projects/${project.slug}`}>
+        <div id="project_title">{project.title}</div>
+      </Link>
       <div id="project_image">
         <ModeImage
           light={project.imageLight}

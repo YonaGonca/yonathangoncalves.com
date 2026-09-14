@@ -34,6 +34,9 @@ export const TRANSLATIONS = {
     "Email": "Correo",
     "Message": "Mensaje",
     "Send": "Enviar",
+    "Sending...": "Enviando...",
+    "Message sent! I'll get back to you soon.": "¡Mensaje enviado! Te responderé pronto.",
+    "Something went wrong. Please try again or email me directly.": "Algo salió mal. Intentá de nuevo o escribime directamente por correo.",
     "Home": "Inicio",
     "Hey, I'm Yonathan.": "Hola, soy Yonathan.",
     "I'm a developer with a deep passion for problem-solving and who finds joy in learning. I have experience in both mobile and web software development, and I'm currently working at Infra Support AG as a Software Engineer.":
@@ -85,6 +88,9 @@ export const TRANSLATIONS = {
     "Email": "Email",
     "Message": "Mensagem",
     "Send": "Enviar",
+    "Sending...": "Enviando...",
+    "Message sent! I'll get back to you soon.": "Mensagem enviada! Vou responder em breve.",
+    "Something went wrong. Please try again or email me directly.": "Algo deu errado. Tente novamente ou me envie um email diretamente.",
     "Home": "Início",
     "Hey, I'm Yonathan.": "Olá, sou Yonathan",
     "I'm a developer with a deep passion for problem-solving and who finds joy in learning. I have experience in both mobile and web software development, and I'm currently working at Infra Support AG as a Software Engineer.":
@@ -136,6 +142,9 @@ export const TRANSLATIONS = {
     "Email": "Email",
     "Message": "Message",
     "Send": "Envoyer",
+    "Sending...": "Envoi en cours...",
+    "Message sent! I'll get back to you soon.": "Message envoyé ! Je vous répondrai bientôt.",
+    "Something went wrong. Please try again or email me directly.": "Une erreur s'est produite. Réessayez ou écrivez-moi directement par email.",
     "Home": "Accueil",
     "Hey, I'm Yonathan.": "Salut, je suis Yonathan.",
     "I'm a developer with a deep passion for problem-solving and who finds joy in learning. I have experience in both mobile and web software development, and I'm currently working at Infra Support AG as a Software Engineer.":

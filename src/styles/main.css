@@ -339,22 +339,27 @@ nav {
 /*Projects*/
 
 #container_projects{
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 100px;
 }
 
 #projects_header{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  row-gap: .5rem;
   padding-left: 1%;
   padding-right: 2%;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
+
 #all_projects_link{
   text-align:right;
-  font-size: 20px;
+  font-size: clamp(0.9rem, 3vw, 1.25rem);
+  flex-shrink: 0;
 }
 
 #all_projects_link a{
@@ -365,6 +370,7 @@ nav {
   padding: .75rem 1rem;
   transition: 0.2s ease-in-out;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 #all_projects_link a:hover{
@@ -382,6 +388,8 @@ nav {
 }
 
 .project{
+  display: flex;
+  flex-direction: column;
   border: 2px solid var(--text-color);
   border-radius: 12px;
   overflow: hidden;
@@ -471,6 +479,7 @@ nav {
 }
 
 #project_links{
+  margin-top: auto;
   background-color: var(--header-color);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -573,6 +582,12 @@ nav {
 
   .skills_box_container{
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .skills_box_container{
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -702,6 +717,25 @@ textarea.input::-webkit-scrollbar {
 .btn:hover{
   background-color: transparent;
   color: var(--body-color);
+}
+
+.btn:disabled{
+  opacity: 0.6;
+  cursor: default;
+}
+
+.form_status{
+  margin-top: 1rem;
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+.form_status_success{
+  color: #4caf50;
+}
+
+.form_status_error{
+  color: #e05555;
 }
 
 .container_input span{

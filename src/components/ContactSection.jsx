@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useSite } from "../context/SiteContext";
 
 const CONTACT_EMAIL = "ygoncalves5@gmail.com";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xbgjvbpr";
 
 function FormField({ type, name, label, value, onChange }) {
   const [focused, setFocused] = useState(false);
@@ -30,14 +31,23 @@ function FormField({ type, name, label, value, onChange }) {
 export default function ContactSection() {
   const { t } = useSite();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [status, setStatus] = useState("idle");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const subject = `Portfolio New Contact Message from ${form.name}`;
-    const body = `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`;
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
+    setStatus("sending");
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(e.target),
+      });
+      if (!response.ok) throw new Error("Request failed");
+      setStatus("success");
+      setForm({ name: "", email: "", message: "" });
+    } catch {
+      setStatus("error");
+    }
   };
 
   const copyEmail = () => {
@@ -114,7 +124,21 @@ export default function ContactSection() {
               onChange={(v) => setForm((f) => ({ ...f, message: v }))}
             />
 
-            <input type="submit" value={t("Send")} className="btn" />
+            <input
+              type="submit"
+              value={status === "sending" ? t("Sending...") : t("Send")}
+              className="btn"
+              disabled={status === "sending"}
+            />
+
+            {status === "success" && (
+              <p className="form_status form_status_success">{t("Message sent! I'll get back to you soon.")}</p>
+            )}
+            {status === "error" && (
+              <p className="form_status form_status_error">
+                {t("Something went wrong. Please try again or email me directly.")}
+              </p>
+            )}
           </form>
         </div>
       </div>
