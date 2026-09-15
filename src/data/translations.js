@@ -54,6 +54,7 @@ export const TRANSLATIONS = {
     "REST API to manage your workouts.": "API REST para gestionar tus entrenamientos.",
     "Simple CLI app for efficient task management.": "Aplicación CLI simple para la gestión eficiente de tareas.",
     "Simple GUI to automate service requests at Viatel.": "Interfaz gráfica simple para automatizar solicitudes de servicio en Viatel.",
+    "Flutter web admin panel to manage properties, laundry reservations, and residents.": "Panel de administración en Flutter Web para gestionar propiedades, reservas de lavandería y residentes.",
     "Fun and interactive memory game": "Juego de memoria divertido e interactivo",
   },
   pt: {
@@ -108,6 +109,7 @@ export const TRANSLATIONS = {
     "REST API to manage your workouts.": "API REST para gerenciar seus treinos.",
     "Simple CLI app for efficient task management.": "Aplicativo CLI simples para gestão eficiente de tarefas.",
     "Simple GUI to automate service requests at Viatel.": "Interface gráfica simples para automatizar pedidos de serviço na Viatel.",
+    "Flutter web admin panel to manage properties, laundry reservations, and residents.": "Painel de administração em Flutter Web para gerenciar propriedades, reservas de lavanderia e residentes.",
     "Fun and interactive memory game": "Jogo da memória divertido e interativo",
   },
   fr: {
@@ -162,6 +164,7 @@ export const TRANSLATIONS = {
     "REST API to manage your workouts.": "API REST pour gérer vos entraînements.",
     "Simple CLI app for efficient task management.": "Application CLI simple pour une gestion efficace des tâches.",
     "Simple GUI to automate service requests at Viatel.": "Interface graphique simple pour automatiser les demandes de service chez Viatel.",
+    "Flutter web admin panel to manage properties, laundry reservations, and residents.": "Panneau d'administration Flutter Web pour gérer les propriétés, les réservations de laverie et les résidents.",
     "Fun and interactive memory game": "Jeu de mémoire amusant et interactif",
   },
 };

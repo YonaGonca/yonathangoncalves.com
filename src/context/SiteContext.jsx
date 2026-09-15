@@ -40,7 +40,7 @@ export function SiteProvider({ children }) {
     () => localStorage.getItem("darkMode") === "enabled"
   );
   const [language, setLanguage] = useState(
-    () => localStorage.getItem("language") || "es"
+    () => localStorage.getItem("language") || "en"
   );
 
   useEffect(() => {
