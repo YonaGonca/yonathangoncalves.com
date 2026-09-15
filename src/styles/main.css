@@ -267,6 +267,16 @@ nav {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  #introduction_text h3{
+    font-size: 36px;
+  }
+
+  #introduction_text p{
+    font-size: 18px;
+  }
+}
+
 .link_introduction{
   color: var(--first-color);
 }

@@ -23,7 +23,7 @@ export default function AboutMe() {
         <div id="aboutme_text">
           <p>
             {t(
-              "Hello, I’m Yonathan Gonçalves, a backend developer with a passion for programming. Although I initially thought my life's work would be as a physicist, I discovered that my true passion lies in programming and solving problems through code."
+              "Hello, I’m Yonathan Gonçalves, a developer with a passion for programming and problem-solving, with experience in both mobile and web software development. I’m currently working at Infra Support AG as a Software Engineer. Although I initially thought my life's work would be as a physicist, I discovered that my true passion lies in programming and solving problems through code."
             )}
           </p>
 

@@ -20,6 +20,11 @@ export default function Header() {
         <div className={`menu${menuOpen ? " show-menu" : ""}`} id="nav-menu">
           <ul className="nav-list">
             <li className="nav-item">
+              <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>
+                {t("Home")}
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link to="/projects" className="nav-link" onClick={() => setMenuOpen(false)}>
                 {t("Projects")}
               </Link>
