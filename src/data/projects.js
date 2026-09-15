@@ -7,6 +7,7 @@ export const PROJECTS = [
     descriptionKey: "Flutter web admin panel to manage properties, laundry reservations, and residents.",
     imageLight: "/assets/images/lavaresi_admin_panel.png",
     imageDark: "/assets/images/lavaresi_admin_panel.png",
+    imageHover: "/assets/images/lavaresi_admin_panel_table.png",
     technologies: [
       { icon: "/assets/icons/dart.svg", label: "Dart" },
       { icon: "/assets/icons/flutter.svg", label: "Flutter" },

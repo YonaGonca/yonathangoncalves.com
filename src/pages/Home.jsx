@@ -12,7 +12,7 @@ export default function Home() {
     document.title = `Yonathan Gonçalves | ${t("Home")}`;
   }, [t]);
 
-  const featured = PROJECTS.slice(0, 3);
+  const featured = PROJECTS.filter((project) => !project.ownProject).slice(0, 3);
 
   return (
     <>

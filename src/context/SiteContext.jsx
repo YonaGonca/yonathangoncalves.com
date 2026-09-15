@@ -28,6 +28,11 @@ function applyDarkModeVars(enabled) {
   Object.entries(vars).forEach(([key, value]) => {
     document.documentElement.style.setProperty(key, value);
   });
+
+  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+  if (themeColorMeta) {
+    themeColorMeta.setAttribute("content", vars["--body-color"]);
+  }
 }
 
 export function SiteProvider({ children }) {

@@ -68,6 +68,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 input,
@@ -413,8 +414,32 @@ nav {
 }
 
 #project_image{
+  display: block;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1917 / 1025;
   border-top: 2px solid var(--text-color);
   background-color: transparent !important;
+}
+
+.project_image_change{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project_image_hover{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#project_image:hover .project_image_hover{
+  opacity: 1;
 }
 
 #project_company{
@@ -473,14 +498,23 @@ nav {
   visibility: visible;
 }
 
-#project_description{
-  padding: .75rem 1rem;
+#project_down{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   background-color: var(--header-color);
+
+}
+
+#project_description{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .75rem 1rem;
 }
 
 #project_links{
-  margin-top: auto;
-  background-color: var(--header-color);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
@@ -979,10 +1013,6 @@ nav {
 
 #projects_header{
   padding-right: 2%;
-}
-
-#projects{
-  grid-template-columns: auto auto auto;
 }
 
   }
