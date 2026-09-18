@@ -101,8 +101,8 @@ export const SKILLS = {
 };
 
 export const CV_LINKS = {
-  en: "/assets/others/CV-Yonathan-Ferreira_en.pdf",
-  es: "/assets/others/CV-Yonathan-Ferreira_es.pdf",
-  pt: "/assets/others/CV-Yonathan-Ferreira_pt.pdf",
-  fr: "/assets/others/CV-Yonathan-Ferreira_fr.pdf",
+  en: "/assets/others/CV_Yonathan_Goncalves_EN.pdf",
+  es: "/assets/others/CV_Yonathan_Goncalves_ES.pdf",
+  pt: "/assets/others/CV_Yonathan_Goncalves_PT.pdf",
+  fr: "/assets/others/CV_Yonathan_Goncalves_FR.pdf",
 };
