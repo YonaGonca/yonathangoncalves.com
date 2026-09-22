@@ -20,7 +20,9 @@ export default function AboutMe() {
         <div id="aboutme_header">
           <h4>{t("About me")}</h4>
         </div>
+        <div id="aboutme_content">
         <div id="aboutme_text">
+          <img id="aboutme_photo" src="/assets/images/foto.png" alt="Yonathan Gonçalves" />
           <p>
             {t(
               "Hello, I’m Yonathan Gonçalves, a developer with a passion for programming and problem-solving, with experience in both mobile and web software development. I’m currently working at Infra Support AG as a Software Engineer. Although I initially thought my life's work would be as a physicist, I discovered that my true passion lies in programming and solving problems through code."
@@ -54,6 +56,7 @@ export default function AboutMe() {
               " I have worked on, each reflecting my approach to problem-solving and my passion for software development."
             )}
           </p>
+        </div>
         </div>
 
         <div id="container_cv">
